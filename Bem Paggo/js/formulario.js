@@ -9,3 +9,6 @@ function soma(){
 
 }
 
+function alerta(){
+	alert("Carrinho preenchido com sucesso!");
+}
