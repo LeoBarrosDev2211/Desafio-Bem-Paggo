@@ -1,0 +1,68 @@
+<!doctype html> 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- CSS estilizado -->
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+
+    <title>Desafio Bem Paggo</title>
+
+</head>
+<body>
+
+	<div class="container" id="conteudo">
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<div class="card-body conteudo">
+					<div id="cabecalho" class="rounded"> <!-- cabeçalho-->
+						<div class="row justify-content-between align-items-center" id="direita">
+					      <div class="col-4"><p id="titulo">Formulário para compra de <strong>Pacotes de Adesivos</strong></p></div>
+					      <div class="col-3 align-self-center" id="logo"><i class="fa-solid fa-4x fa-box"></i></div>
+					    </div>
+					</div> <!-- fim cabeçalho-->
+					<form id="formulario" method="POST" action="">
+						<div class="form-group">
+							<label for="quais"><p class="font-weight-bold">Quais adesivos:</p></label><br>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="valReact"> React <br>
+								<input class="form-check-input" type="checkbox" value="" id="valVue"> Vue <br>
+								<input class="form-check-input" type="checkbox" value="" id="valAngular"> Angular <br>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="qntd"><p class="font-weight-bold">Quantos adesivos de cada?</p></label><br>
+							<button onclick="subtrai()" class="btn btn-md btn-custom form-check-inline"><strong>-</strong></button>
+							<input class="form-control col-sm-2 text-align-center form-check-inline" placeholder="0" id="qntdDesejada"></input>
+							<button onclick="soma()" class="btn btn-md btn-custom form-check-inline"><strong>+</strong></button>
+						</div>
+						<div class="form-group">
+							<label for="obs"><p class="font-weight-bold">Observações:</p></label><br>
+							<textarea class="form-control" rows="3" placeholder="Alguma dúvida? Recado?"></textarea><br>
+						</div>
+						<div class="justify-content-end form-group" id="final">
+							<button type="submit" onsubmit="" class="btn btn-lg btn-custom rounded float-right">Enviar</button>			
+						</div>						  
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+ 	
+
+ 	<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/681f422e14.js" crossorigin="anonymous"></script>
+    <!-- JS próprio -->
+    <script type="text/javascript" src="js/formulario.js"></script>
+</body>
+</html>
